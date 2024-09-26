@@ -12,19 +12,26 @@ return {
   },
   cmd = 'Neotree',
   keys = {
-    { '\\', ':Neotree reveal<CR>', desc = 'NeoTree reveal', silent = true },
+    { '<leader>e', ':Neotree reveal<CR>', desc = 'NeoTree reveal', silent = true },
   },
   opts = {
     filesystem = {
       window = {
         mappings = {
-          ['\\'] = 'close_window',
+          ['<leader>e'] = 'close_window',
         },
       },
       filtered_items = {
         hide_dotfiles = false,
         hide_gitignore = false,
       },
+    },
+    buffers = {
+      enable = true,
+    },
+    source_selector = {
+      winbar = true,
+      statusline = false,
     },
   },
 }
