@@ -52,6 +52,8 @@ require('lazy').setup({
 
   -- colorscheme
   require 'kickstart.plugins.tokyonight',
+  -- require 'custom.plugins.RosePine',
+  -- require 'custom.plugins.catppuccin',
 
   -- Highlight todo, notes, etc in comments
   { 'folke/todo-comments.nvim', event = 'VimEnter', dependencies = { 'nvim-lua/plenary.nvim' }, opts = { signs = false } },
@@ -83,6 +85,7 @@ require('lazy').setup({
   --    For additional information, see `:help lazy.nvim-lazy.nvim-structuring-your-plugins`
   -- { import = 'custom.plugins' },
   require 'custom.plugins.VimBeGood',
+  require 'custom.plugins.luarocks',
 }, {
   ui = {
     -- If you are using a Nerd Font: set icons to an empty table which will use the
