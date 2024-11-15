@@ -2,7 +2,7 @@ return {
   'rose-pine/neovim',
   name = 'rose-pine',
   config = function()
-    require('rose-pine').setup { disable_background = true, disable_italics = true }
+    require('rose-pine').setup { styles = { transparency = true, italic = false, bold = false } }
 
     vim.cmd.colorscheme 'rose-pine'
   end,
