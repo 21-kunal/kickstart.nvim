@@ -169,6 +169,13 @@ return {
         clangd = {},
         gopls = {},
         pyright = {},
+        denols = {
+          root_dir = require('lspconfig.util').root_pattern('deno.json', 'deno.jsonc'),
+          init_options = {
+            lint = true,
+            unstable = true,
+          },
+        },
         -- rust_analyzer = {},
         -- ... etc. See `:help lspconfig-all` for a list of all the pre-configured LSPs
         --

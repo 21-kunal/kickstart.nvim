@@ -10,6 +10,8 @@ return {
       transparent = true,
       terminal_colors = false,
       styles = {
+        comments = { italic = false },
+        keywords = { italic = false },
         sidebars = 'transparent',
         floats = 'dark',
       },
@@ -25,4 +27,3 @@ return {
     end,
   },
 }
-
